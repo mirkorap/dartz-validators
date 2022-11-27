@@ -1,0 +1,15 @@
+name: dart_validator
+description: Dart Validator provides functions to validate values
+version: 1.0.0
+repository: https://github.com/mirkorap/dart_validator
+issue_tracker: https://github.com/mirkorap/dart_validator/issues
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  dartz: ^0.10.1
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0
