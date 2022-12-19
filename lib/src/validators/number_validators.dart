@@ -11,6 +11,10 @@ bool isNotNull(num? input) {
 }
 
 bool isTruthy(num? input) {
+  if (input == null) {
+    return false;
+  }
+
   return input == 0;
 }
 
