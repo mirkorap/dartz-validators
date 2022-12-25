@@ -4,7 +4,7 @@ part 'number_failure.freezed.dart';
 
 @freezed
 class NumberFailure with _$NumberFailure {
-  const factory NumberFailure.invalidNumber(Object failedValue) = InvalidNumber;
+  const factory NumberFailure.invalidNumber(Object? failedValue) = InvalidNumber;
 
   const factory NumberFailure.nullable(num? failedValue) = Nullable;
 
@@ -27,6 +27,10 @@ class NumberFailure with _$NumberFailure {
   const factory NumberFailure.tooSmall(num failedValue, num maxValue) = TooSmall;
 
   const factory NumberFailure.notDivisibleBy(num failedValue, num divider) = NotDivisibleBy;
+
+  const factory NumberFailure.notEven(num failedValue) = NotEven;
+
+  const factory NumberFailure.notOdd(num failedValue) = NotOdd;
 
   const factory NumberFailure.notPrimary(num failedValue) = NotPrimary;
 }

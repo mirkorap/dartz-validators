@@ -1,4 +1,4 @@
-bool isNumber(Object input) {
+bool isNumber(Object? input) {
   return input is num;
 }
 
@@ -60,6 +60,14 @@ bool isBetween(num input, num minValue, num maxValue) {
 
 bool isDivisibleBy(num input, num divider) {
   return input % divider == 0;
+}
+
+bool isEven(num input) {
+  return isDivisibleBy(input, 2);
+}
+
+bool isOdd(num input) {
+  return !isDivisibleBy(input, 2);
 }
 
 bool isPrimary(num input) {

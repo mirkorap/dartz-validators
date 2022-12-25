@@ -61,6 +61,14 @@ extension NumberValidators on num {
     return validators.isDivisibleBy(this, divider);
   }
 
+  bool get isEven {
+    return validators.isEven(this);
+  }
+
+  bool get isOdd {
+    return validators.isOdd(this);
+  }
+
   bool get isPrimary {
     return validators.isPrimary(this);
   }
@@ -119,6 +127,14 @@ extension NumberValidators on num {
 
   Either<NumberFailure, num> fpIsDivisibleBy(num divider) {
     return fp_validators.fpIsDivisibleBy(this, divider);
+  }
+
+  Either<NumberFailure, num> get fpIsEven {
+    return fp_validators.fpIsEven(this);
+  }
+
+  Either<NumberFailure, num> get fpIsOdd {
+    return fp_validators.fpIsOdd(this);
   }
 
   Either<NumberFailure, num> get fpIsPrimary {

@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import '/src/failures/number_failure.dart';
 import '/src/validators/number_validators.dart';
 
-Either<NumberFailure, num> fpIsNumber(Object input) {
+Either<NumberFailure, num> fpIsNumber(Object? input) {
   if (isNumber(input)) {
     return right(input as num);
   }
@@ -125,6 +125,22 @@ Either<NumberFailure, num> fpIsDivisibleBy(num input, num divider) {
   }
 
   return left(NumberFailure.notDivisibleBy(input, divider));
+}
+
+Either<NumberFailure, num> fpIsEven(num input) {
+  if (isEven(input)) {
+    return right(input);
+  }
+
+  return left(NumberFailure.notEven(input));
+}
+
+Either<NumberFailure, num> fpIsOdd(num input) {
+  if (isOdd(input)) {
+    return right(input);
+  }
+
+  return left(NumberFailure.notOdd(input));
 }
 
 Either<NumberFailure, num> fpIsPrimary(num input) {
