@@ -4,7 +4,7 @@ import 'package:credit_card_validator/card_number.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:uuid/uuid.dart';
 
-bool isString(Object input) {
+bool isString(Object? input) {
   return input is String;
 }
 

@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import '/src/failures/string_failure.dart';
 import '/src/validators/string_validators.dart';
 
-Either<StringFailure, String> fpIsString(Object input) {
+Either<StringFailure, String> fpIsString(Object? input) {
   if (isString(input)) {
     return right(input as String);
   }

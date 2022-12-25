@@ -4,7 +4,7 @@ part 'string_failure.freezed.dart';
 
 @freezed
 class StringFailure with _$StringFailure {
-  const factory StringFailure.invalidString(Object failedValue) = InvalidString;
+  const factory StringFailure.invalidString(Object? failedValue) = InvalidString;
 
   const factory StringFailure.nullable(String? failedValue) = Nullable;
 
