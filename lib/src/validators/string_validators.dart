@@ -21,7 +21,7 @@ bool isTruthy(String? input) {
     return false;
   }
 
-  return input.isEmpty;
+  return input.isNotEmpty;
 }
 
 bool isFalsy(String? input) {
