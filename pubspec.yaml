@@ -1,8 +1,8 @@
-name: dart_validators
+name: dartz_validators
 description: Provides a set of extension methods to validate strings, numbers, iterables and maps
-version: 0.0.1
-repository: https://github.com/mirkorap/dart-validators
-issue_tracker: https://github.com/mirkorap/dart-validators/issues
+version: 1.0.0
+repository: https://github.com/mirkorap/dartz-validators
+issue_tracker: https://github.com/mirkorap/dartz-validators/issues
 
 environment:
   sdk: '>=2.18.2 <3.0.0'

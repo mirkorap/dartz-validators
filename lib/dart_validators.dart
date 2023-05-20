@@ -1,4 +1,4 @@
-library dart_validator;
+library dartz_validators;
 
 export 'src/extension_methods/iterable_validators.dart';
 export 'src/extension_methods/map_validators.dart';
