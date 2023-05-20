@@ -1,5 +1,5 @@
 name: dart_validators
-description: Provides a number of functions to validate values
+description: Provides a set of extension methods to validate strings, numbers, iterables and maps
 version: 1.0.0
 repository: https://github.com/mirkorap/dart-validators
 issue_tracker: https://github.com/mirkorap/dart-validators/issues
